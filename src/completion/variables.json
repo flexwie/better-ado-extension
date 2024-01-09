@@ -1,0 +1,338 @@
+{
+    "System": [
+        {
+            "name": "AccessToken",
+            "desc": "REST API token"
+        },
+        {
+            "name": "CollectionId",
+            "desc": "GUID of organization"
+        },
+        {
+            "name": "CollectionUri",
+            "desc": "URL to organization"
+        },
+        {
+            "name": "DefaultWorkingDirectory",
+            "desc": "Default path for sources"
+        },
+        {
+            "name": "DefinitionId",
+            "desc": "Id of the pipeline"
+        },
+        {
+            "name": "HostType",
+            "desc": ""
+        },
+        {
+            "name": "JobAttempt",
+            "desc": "# of attempt"
+        },
+        {
+            "name": "JobDisplayName",
+            "desc": "Name of the job"
+        },
+        {
+            "name": "JobId",
+            "desc": "Id of the job"
+        },
+        {
+            "name": "JobName",
+            "desc": "Name of the job"
+        },
+        {
+            "name": "PhaseAttempt",
+            "desc": "# of attempts in phase"
+        },
+        {
+            "name": "PhaseDisplayName",
+            "desc": "Name of phase"
+        },
+        {
+            "name": "PhaseName",
+            "desc": "Name of phase"
+        },
+        {
+            "name": "PlanId",
+            "desc": "Id for single pipeline run"
+        },
+        {
+            "name": "PullRequest.IsFork",
+            "desc": ""
+        },
+        {
+            "name": "PullRequest.PullRequestId",
+            "desc": "Id of the pull request"
+        },
+        {
+            "name": "PullRequest.PullRequestNumber",
+            "desc": "Number of the pull request"
+        },
+        {
+            "name": "PullRequest.targetBranchName",
+            "desc": "Target branch of pull request"
+        },
+        {
+            "name": "PullRequest.SourceBranch",
+            "desc": "Source branch of pull request"
+        },
+        {
+            "name": "PullRequest.SourceCommitId",
+            "desc": "Commit od of source"
+        },
+        {
+            "name": "PullRequest.SourceRepositoryURI",
+            "desc": "URL of source repository"
+        },
+        {
+            "name": "PullRequest.TargetBranch",
+            "desc": "Ref of target branch"
+        },
+        {
+            "name": "StageAttempt",
+            "desc": "# of attempts on stage"
+        },
+        {
+            "name": "StageDisplayName",
+            "desc": "Name of the stage"
+        },
+        {
+            "name": "StageName",
+            "desc": "Name of stage"
+        },
+        {
+            "name": "TeamProject",
+            "desc": "Name of project"
+        },
+        {
+            "name": "TeamProjectId",
+            "desc": "Id of the project"
+        },
+        {
+            "name": "TimelineId",
+            "desc": "Id for logs of this run"
+        }
+    ],
+    "Agent": [
+        {
+            "name": "BuildDirectory",
+            "desc": "Root working directory of build"
+        },
+        {
+            "name": "ContainerMapping",
+            "desc": "Mapping from container resource names to Docker IDs"
+        },
+        {
+            "name": "HomeDirectory",
+            "desc": "Home directory of the agent"
+        },
+        {
+            "name": "Id",
+            "desc": "Agent Id"
+        },
+        {
+            "name": "JobName",
+            "desc": "Name of the running job"
+        },
+        {
+            "name": "JobStatus",
+            "desc": "Status of the build"
+        },
+        {
+            "name": "MachineName",
+            "desc": "Name of the host machine"
+        },
+        {
+            "name": "Name",
+            "desc": "Name of the agent"
+        },
+        {
+            "name": "OS",
+            "desc": "Operating system of the host"
+        },
+        {
+            "name": "OSArchitecture",
+            "desc": "OS processor architecture of the host"
+        },
+        {
+            "name": "TempDirectory",
+            "desc": "Temporary folder location"
+        },
+        {
+            "name": "ToolsDirectory",
+            "desc": "Place for different versions of executables"
+        },
+        {
+            "name": "WorkFolder",
+            "desc": "Working directory for this agent"
+        }
+    ],
+    "Build": [
+        {
+            "name": "ArtifactsStagingDirectory",
+            "desc": "Path for artifacts to be published"
+        },
+        {
+            "name": "BuildId",
+            "desc": "Id of the completed build"
+        },
+        {
+            "name": "BuildNumber",
+            "desc": "Name of the completed build"
+        },
+        {
+            "name": "BuildUri",
+            "desc": "Uri of the build"
+        },
+        {
+            "name": "BinariesDirectory",
+            "desc": "Output path for compiled binaries"
+        },
+        {
+            "name": "ContainerId",
+            "desc": "ID of the container for artifact"
+        },
+        {
+            "name": "CronSchedule.DisplayName",
+            "desc": "displayName if the pipeline is scheduled"
+        },
+        {
+            "name": "DefinitionName",
+            "desc": "Name of the build pipeline"
+        },
+        {
+            "name": "DefinitionVersion",
+            "desc": "Version of the build pipeline"
+        },
+        {
+            "name": "QueuedBy",
+            "desc": "User triggered for"
+        },
+        {
+            "name": "QueuedById",
+            "desc": "User Id triggered for"
+        },
+        {
+            "name": "Reason",
+            "desc": "Trigger reason"
+        },
+        {
+            "name": "Repository.LocalPath",
+            "desc": "Path to source code"
+        },
+        {
+            "name": "Repository.ID",
+            "desc": "Id of the repository"
+        },
+        {
+            "name": "Repository.Name",
+            "desc": "Name of the repository"
+        },
+        {
+            "name": "Repository.Provider",
+            "desc": "Type of the repository"
+        },
+        {
+            "name": "Repository.Uri",
+            "desc": "URL of the repository"
+        },
+        {
+            "name": "RequestedFor",
+            "desc": "User requested for"
+        },
+        {
+            "name": "RequestedForEmail",
+            "desc": "User mail requested for"
+        },
+        {
+            "name": "RequestedForId",
+            "desc": "User id requestd for"
+        },
+        {
+            "name": "SourceBranch",
+            "desc": "Branch of the repository"
+        },
+        {
+            "name": "SourceBranchName",
+            "desc": "Branch name of the repository"
+        },
+        {
+            "name": "SourcesDirectory",
+            "desc": "Path to source code"
+        },
+        {
+            "name": "SourceVersion",
+            "desc": "Latest commit Id"
+        },
+        {
+            "name": "SourceVersionMessage",
+            "desc": "Latest commit message"
+        },
+        {
+            "name": "StagingDirectory",
+            "desc": "Path to staging folder"
+        },
+        {
+            "name": "Repository.Git.SubmoduleCheckout",
+            "desc": "If submoduled have been checked out"
+        },
+        {
+            "name": "TriggeredBy.BuildId",
+            "desc": "Build Id if triggered from build"
+        },
+        {
+            "name": "TriggeredBy.DefinitionId",
+            "desc": "Definition Id if triggered from build"
+        },
+        {
+            "name": "TriggeredBy.DefinitionName",
+            "desc": "Definition name if triggered from build"
+        },
+        {
+            "name": "TriggeredBy.BuildNumber",
+            "desc": "Build number if triggered from build"
+        },
+        {
+            "name": "TriggeredBy.ProjectID",
+            "desc": "Project Id if triggered from build"
+        },
+        {
+            "name": "TestResultsDirectory",
+            "desc": "Path to test results"
+        }
+    ],
+    "Pipeline": [
+        {
+            "name": "Workspace",
+            "desc": "Workspace directory of build"
+        }
+    ],
+    "Environment": [
+        {
+            "name": "Name",
+            "desc": "Name of the environment"
+        },
+        {
+            "name": "Id",
+            "desc": "Id of the environment"
+        },
+        {
+            "name": "ResourceName",
+            "desc": "Name of specific resource in environment"
+        },
+        {
+            "name": "ResourceId",
+            "desc": "Id of specific resource in environment"
+        }
+    ],
+    "Strategy": [
+        {
+            "name": "Name",
+            "desc": "Name of deployment strategy"
+        },
+        {
+            "name": "CycleName",
+            "desc": "Current cycle name in deployment"
+        }
+    ]
+}
