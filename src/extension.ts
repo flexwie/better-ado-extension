@@ -7,8 +7,12 @@ import {
   provideItems,
   provideParents,
 } from "./completion/provide";
+import {
+  SemanticTokenProvider,
+  semanticTokenLegend,
+} from "./semantics/tokens-provider";
 
-const LANGUAGE = "azure-pipelines";
+const LANGUAGE = "yaml";
 const VARIABLE_INIT = "$";
 
 // This method is called when your extension is activated
@@ -55,7 +59,19 @@ export function activate(context: vscode.ExtensionContext) {
     VARIABLE_INIT
   );
 
-  context.subscriptions.push(parentProvider, childProvider, customProvider);
+  const semanticProvider =
+    vscode.languages.registerDocumentSemanticTokensProvider(
+      { language: LANGUAGE, scheme: "file" },
+      new SemanticTokenProvider(),
+      semanticTokenLegend
+    );
+
+  context.subscriptions.push(
+    parentProvider,
+    childProvider,
+    customProvider,
+    semanticProvider
+  );
 }
 
 // This method is called when your extension is deactivated
